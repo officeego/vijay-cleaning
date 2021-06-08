@@ -1,0 +1,7 @@
+/* .app {
+  overflow: hidden;
+} */
+
+.projects-grid {
+  display: flex;
+}
