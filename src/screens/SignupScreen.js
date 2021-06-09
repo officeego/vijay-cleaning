@@ -5,6 +5,7 @@ import "./SignupScreen.css";
 import SignupForm from "../SignupForm";
 import CleanFooter from "../cleaning/CleanFooter";
 import { FiNavigation } from 'react-icons/fi'
+import tazzerclean from '../images/tazzerclean.png'
 
 
 function SignupScreen() {
@@ -14,17 +15,17 @@ function SignupScreen() {
       <div className="signupScreen__header">
         <Link to="/">
           <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+            src={tazzerclean}
             alt="Home"
           />
-           <FiNavigation className="arrow-pointer"/>
+           {/* <FiNavigation className="arrow-pointer"/> */}
         </Link>
       </div>
       <h1 className="signupScreen__heading">Create an account</h1>
       <div className="signupScreen__rewards">
-        <h4>TazzerCleaning® REWARDS</h4>
+        <h4>TazzerCleaner® REWARDS</h4>
         <p>
-          Join TazzerCleaning Rewards to earn Stars for free Cleaning Services, any way
+          Join TazzerCleaner Rewards to earn Stars for free Cleaning Services, any way
           you pay. Get access to mobile ordering, a birthday Reward, and{" "}
           <Link>more</Link>.
         </p>

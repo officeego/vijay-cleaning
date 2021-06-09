@@ -14,9 +14,9 @@ function MenuScreen() {
           <MenuList />
         </div>
         <div className="menuScreen__right">
-          <h1>TazzerCleaning</h1>
+          <h1>TazzerCleaner</h1>
           <div className="menuScreen__category">
-            <h2>Cleaning Services</h2>
+            <h2>TOP RATED CLEANER EXPERT</h2>
             <div className="menuScreen__items">
               {menuList.map((menuListCategory) =>
                 menuListCategory.drinks.map(({ type, path, image, price }) => (
@@ -27,7 +27,7 @@ function MenuScreen() {
           </div>
 
           <div className="menuScreen__category">
-            <h2>Food</h2>
+            <h2>Specialty Services</h2>
             <div className="menuScreen__items">
               {menuList.map((menuListCategory) =>
                 menuListCategory.food.map(({ type, path, image, price }) => (
@@ -38,7 +38,7 @@ function MenuScreen() {
           </div>
 
           <div className="menuScreen__category">
-            <h2>At Home Coffee</h2>
+            <h2>Splash back Services</h2>
             <div className="menuScreen__items">
               {menuList.map((menuListCategory) =>
                 menuListCategory.atHomeCoffee.map(({ type, path, image, price }) => (
@@ -49,7 +49,7 @@ function MenuScreen() {
           </div>
 
           <div className="menuScreen__category">
-            <h2>Merchandise</h2>
+            <h2>Duct & Vent Cleaning</h2>
             <div className="menuScreen__items">
               {menuList.map((menuListCategory) =>
                 menuListCategory.merchandise.map(({ type, path, image, price }) => (

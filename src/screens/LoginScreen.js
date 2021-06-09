@@ -13,6 +13,7 @@ import { login } from "../features/userSlice";
 import FormSubmit from "../FormSubmit";
 import FooterSecondary from "../FooterSecondary";
 import { FiNavigation } from 'react-icons/fi'
+import tazzerclean from '../images/tazzerclean.png'
 
 function LoginScreen() {
   const { register, handleSubmit, watch, errors } = useForm();
@@ -39,7 +40,7 @@ function LoginScreen() {
       <div className="loginScreen__left">
         <Link to="/">
           <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+            src={tazzerclean}
             alt=""
           />
           <FiNavigation className="pointer"/>
@@ -114,14 +115,14 @@ function LoginScreen() {
           <FormSubmit name="Sign in" type="submit" />
         </form>
         <div className="loginScreen__rewards">
-          <h4>JOIN TazzerCleaning® REWARDS</h4>
+          <h4>JOIN TazzerCleaner® REWARDS</h4>
         </div>
         <div className="loginScreen__joinNow">
           <div className="loginScreen__joinNowContainer">
             <Link to="/account/create">Join now</Link>
             <h4>Create an account and bring on the Rewards!</h4>
             <p>
-              Join TazzerCleaning® Rewards to earn free Cleaning Services, get free
+              Join TazzerCleaner® Rewards to earn free Cleaning Services, get free
               refills, pay and order with your phone, and more.
             </p>
           </div>

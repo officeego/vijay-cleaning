@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux'
 import { selectUser } from './features/userSlice'
 import LogoutButton from './LogoutButton'
 import { FiNavigation } from 'react-icons/fi'
+import tazzerclean from './images/tazzerclean.png'
 
 function Header({ menuPage }) {
   const user = useSelector(selectUser)
@@ -18,10 +19,12 @@ function Header({ menuPage }) {
       <div className='header__left'>
         <Link className='header__logo' to='/'>
           <img
-            src='https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png'
+            // src='https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png'
+            src={tazzerclean}
             alt=''
           />
           {/* <FiNavigation /> */}
+          {/* <h1>TC</h1> */}
         </Link>
         <Link to='/menu' className='header__link'>
           Start

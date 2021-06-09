@@ -8,6 +8,7 @@ import HeaderAir from '../AirCleaning/HeaderAir'
 import CleanFooter from './CleanFooter'
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import EmailIcon from '@material-ui/icons/Email';
+import HomeIcon from '@material-ui/icons/Home';
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -50,7 +51,7 @@ const Contact = () => {
         <div className="contact-info">
           <h1> <WhatsAppIcon className="whatsapp-icon"/> WhatsApp : 0091 9731330926</h1>
           <h1> <EmailIcon className="email-icon" /> Email: info@tazzercleaners.com</h1>
-          <h1> <EmailIcon className="email-icon" /> Email: tazzercleaners@gmail.com</h1>
+          <h1> <HomeIcon className="email-icon" /> Address: Bangalore/ Cameroon /Nigeria</h1>
           
           {/* <h1>55670-76789</h1> */}
         </div>

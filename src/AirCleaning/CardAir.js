@@ -10,7 +10,7 @@ function CardAir({ src, title, description, price }) {
                 <h2>{title}</h2>
                 <h4>{description}</h4>
                 <h3>{price}</h3>
-               <h1 className="star"> <StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/></h1>
+               <h1 className="star"> <StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><p>(5)</p></h1>
             </div>
         </div>
     )

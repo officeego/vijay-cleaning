@@ -27,7 +27,7 @@ function FooterSecondary({ alignItems, paddingLeft, flexDirection }) {
             <Link>Cookie Preferences</Link>
           </div>
         </div>
-        <span className='footerSecondary__copyright'>© 2021 TazzerCleaning</span>
+        <span className='footerSecondary__copyright'>© 2021 tazzercleaner</span>
       </div>
     </div>
     {/* <CleanFooter /> */}

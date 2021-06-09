@@ -9,8 +9,8 @@ function MenuItem({ type, image, price }) {
     <Fade>
       <Link className='menuItem'>
         <img src={image} alt='' className='menuItem__image' />
-        <h4 className='menuItem__type'>{type}<p className="star-rating"><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/></p></h4>
-        <p>{price}</p>
+        <h4 className='menuItem__type'>{type}<p><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/><StarBorderIcon/></p></h4>
+        <Link to="/"> <p>{price}</p></Link> 
         <p></p>
       </Link>
     </Fade>

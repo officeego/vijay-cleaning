@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CleanFooter.css';
+import { db } from "../firebase"
 // import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
 import { FiNavigation } from 'react-icons/fi'
@@ -17,6 +18,20 @@ import { Pinterest } from '@material-ui/icons';
 
 
 function CleanFooter() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+      e.preventDefault();
+
+      db.collection('contacts').add({
+          email: email,
+      })
+
+
+      setEmail("");
+  };
+
+  
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -27,7 +42,8 @@ function CleanFooter() {
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
-          {/* <form>
+          {/* // */}
+          <form onSubmit={handleSubmit}>
             <input
               className='footer-input'
               name='email'
@@ -35,17 +51,19 @@ function CleanFooter() {
               placeholder='Your Email'
               autoComplete="off"
               required
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)}
             />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
-
-          </form> */}
+          </form>
+          {/* // */}
         </div>
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>About</h2>
-            <Link to='/contacts'>Domestic Cleaning.</Link>
+            <Link to='/contact'>Domestic Cleaning.</Link>
             <Link to='/'>Boats & Marine Cleaning.</Link>
             <Link to='/'>Gardening Services.</Link>
             <Link to='/'>Handyman Services. </Link>
@@ -53,7 +71,7 @@ function CleanFooter() {
           </div>
           <div className='footer-link-items'>
             <h2>Services</h2>
-            <Link to='/contacts'>ISO 9001 for quality standards.</Link>
+            <Link to='/contact'>ISO 9001 for quality standards.</Link>
             <Link to='/'>ISO 14001 for environmental systems.</Link>
             <Link to='/'>ISO 18001 for health and safety systems.</Link>
             <Link to='/'>ISO 27001 for information security.</Link>
@@ -61,11 +79,12 @@ function CleanFooter() {
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <h2>Agency</h2>
+            <Link to='/'>BICSc</Link>
+            <Link to='/'>BIFM</Link>
+            <Link to='/'>CHAS</Link>
+            <Link to='/'>CSSA Safe Contractor</Link>
+            <Link to='/'>BFA Full Member</Link>
           </div>
           <div className='footer-link-items'>
             <h2>Social</h2>

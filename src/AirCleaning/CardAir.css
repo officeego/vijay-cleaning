@@ -8,7 +8,7 @@
   }
 
 .CardAir:hover {
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
   
 .CardAir > img {
@@ -39,10 +39,14 @@
   }
   
 .CardAir__info > h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Extra */
+.CardAir__info > h3:hover{
+  color: goldenrod;
+}
+
 .star {
   color: goldenrod;
 }

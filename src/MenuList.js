@@ -18,7 +18,7 @@ function MenuList() {
         </div>
       </div>
       <div className='menuList__container'>
-        <h4>Medical Cleaning</h4>
+        <h4>Specialty Services</h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.food.map((menuListItem) => (
@@ -28,7 +28,7 @@ function MenuList() {
         </div>
       </div>
       <div className='menuList__container'>
-        <h4>At Home Coffee</h4>
+        <h4>Splash back Services</h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.atHomeCoffee.map((menuListItem) => (
@@ -38,7 +38,7 @@ function MenuList() {
         </div>
       </div>
       <div className='menuList__container'>
-        <h4>Merchandise</h4>
+        <h4>Domestic home Deep</h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.merchandise.map((menuListItem) => (
@@ -50,7 +50,7 @@ function MenuList() {
       
       {/* two */}
       <div className='menuList__container'>
-        <h4>Drinks</h4>
+        <h4>Air Ducting Cleaning </h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.drinks.map((menuListItem) => (
@@ -60,7 +60,7 @@ function MenuList() {
         </div>
       </div>
       <div className='menuList__container'>
-        <h4>Food</h4>
+        <h4>Oven BBQ Deep Clean</h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.food.map((menuListItem) => (
@@ -70,7 +70,7 @@ function MenuList() {
         </div>
       </div>
       <div className='menuList__container'>
-        <h4>At Home Coffee</h4>
+        <h4>Factories cleaning</h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.atHomeCoffee.map((menuListItem) => (
@@ -80,7 +80,7 @@ function MenuList() {
         </div>
       </div>
       <div className='menuList__container'>
-        <h4>Merchandise</h4>
+        <h4>Public area cleaning</h4>
         <div className='menuList__items'>
           {menuList.map((menuListCategory) =>
             menuListCategory.merchandise.map((menuListItem) => (

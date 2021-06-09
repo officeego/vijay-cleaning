@@ -54,7 +54,7 @@ function FeaturedScreen() {
             info="Aircraft interior cleaning also is known as aircraft detailing service is the act of performing a thorough cleaning, restoration"
             link="Order"
             color="white"
-            background="red"
+            background="brown"
             className="info__hoverDark"
           />
 
@@ -74,14 +74,14 @@ function FeaturedScreen() {
             info="We’re dedicated to providing best-in-class service and making your life a little easier. Have a question? contact our support center "
             link="Order"
             color="white"
-            background="red"
+            background="brown"
             className="info__hoverDark"
           />
         </div>
       </Fade>
 
       <Fade>
-        <Heading heading="GOOD FOOD, GOOD MOOD" />
+        <Heading heading="Seater Sofa Dry cleaning" />
       </Fade>
       <Fade>
         <div className="featuredScreen__discover">

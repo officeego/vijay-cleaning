@@ -31,10 +31,29 @@
 }
 
 /* extra */
-.menuItem__type:hover {
+/* .menuItem__type:hover {
+  color: green;
+} */
+
+/* .menuItem p:hover {
+  color: goldenrod;
+} */
+
+.menuItem > h4:hover {
   color: green;
 }
 
-.menuItem p:hover {
+
+.menuItem p{
   color: goldenrod;
+  font-weight: 800;
+}
+
+.menuItem p:hover{
+  color: rgb(255, 89, 0);
+}
+
+.menuItem__type p {
+  color:goldenrod;
+  width: 120px;
 }
