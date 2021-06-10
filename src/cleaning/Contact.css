@@ -32,7 +32,11 @@ button {
 }
 
 .form > h1 {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  color: rgb(108, 10, 10);
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .form > input,
