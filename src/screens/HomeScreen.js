@@ -51,8 +51,8 @@ function HomeScreen() {
       <div className="homeScreen__featured">
         <Fade>
           <Featured
-            title="NICELY NONDAIRY"
-            info="Tazzer Clean's odour removal solutions will remarkably enhance or permanently eradicate odours. In the UK, Only we ensure the service and results you deserve."
+            title="Odour Removal"
+            info="Tazzer Clean's odour removal solutions will remarkably enhance or permanently eradicate odours. Only we ensure the service and results you deserve."
             link="Explore cleaning service"
             path="/contact"
             image="https://www.tazzerclean.co.uk/uploads/services/se_full_1620952563communal-areas-cleaning.jpg"
@@ -68,7 +68,7 @@ function HomeScreen() {
             removing, window cleaning, floor scrub, cleaning surfaces, etc. We take care of commonly 
             used places like door knob, buttons, switches and surface area bathroom"
             link="Try the new pistachio"
-            path=""
+            path="/services"
             image="https://www.tazzerclean.co.uk/uploads/services/se_full_1620953438pest-control.png"
             order="2"
             background="#f0ebe0"
@@ -81,7 +81,7 @@ function HomeScreen() {
             title="Flexible & Cost "
             info="At Tazzer Clean, you will find all professional cost-effective cleaning services at affordable and flexible rates. We believe in providing quality work at cheapest price"
             link="Order Now"
-            path=""
+            path="/"
             image="https://www.tazzerclean.co.uk/uploads/services/se_full_1620850547Screen+Shot+2017-06-13+at+2.50.22+PM.png"
             background="#f0ebe0"
             color="#1e3932"
@@ -106,7 +106,7 @@ function HomeScreen() {
             info="Tazzer Clean will help you with all your cleaning work. We offer all types of cleaning services including apartment cleaning, carpet cleaning, house cleaning, or
             after renovation services"
             link="Order Now"
-            path=""
+            path="/services"
             image="https://www.tazzerclean.co.uk/uploads/services/se_full_1621461173inside-fogging-of-sanitizer-disinfecting-for-Wisconsin-Businesses-and-Homes.jpg"
             background="#f0ebe0"
             color="#1e3932"
@@ -143,6 +143,7 @@ function HomeScreen() {
             info="Tazzer Clean believe in delivering the best solutions at the lowest pricing as compared to others in the market.We have 24/7 
             customer support which provides all the solutions"
             link="See pickup options"
+            path="/contact"
             color="#1e3932"
             background="goldenrod"
             className="info__hoverLight"
@@ -177,6 +178,7 @@ function HomeScreen() {
             info="We at Tazzer Clean focuses on delivering the quality work and helping our customers with Traditional and Eco-friendly cleaning services. 
             We focuses on domestic cleaning, local handyman, and other global cleaning services."
             link="Order now"
+            path="/services"
             color="#1e3932"
             background="goldenrod"
             className="info__hoverLight"
