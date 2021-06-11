@@ -20,6 +20,7 @@ import SignupScreen from "./screens/SignupScreen";
 import Rewards from "./cleaning/Rewards";
 import PreviousOrder from "./PreviousOrder";
 import FavouriteProduct from "./FavouriteProduct";
+import HttpsRedirect from 'react-https-redirect'
 // import Cards from "./cleaning/Card";
 import Contact from "./cleaning/Contact";
 import MenuHeader from "./MenuHeader";
@@ -50,6 +51,7 @@ function App() {
   }, [dispatch]);
 
   return (
+    <HttpsRedirect>
     <div className="app">
       <Router>
         <Switch>
@@ -105,6 +107,7 @@ function App() {
       </Router>
      
     </div>
+    </HttpsRedirect>
   );
 }
 
